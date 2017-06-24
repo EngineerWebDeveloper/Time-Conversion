@@ -17,20 +17,20 @@ function timeConversion($s) {
       case ($s=="12:00:00PM"):
         return "12:00:00";
         break;
-	case ($arr[8]=="P" and $ht=="12" ):return fuck3($s);
+	case ($arr[8]=="P" and $ht=="12" ):return meth3($s);
 	
       
         break;
 	
-	case ($arr[8]=="A" and $ht=="12" ):return fuck2($s);
+	case ($arr[8]=="A" and $ht=="12" ):return meth2($s);
 	
       
         break;
-	case ($arr[8]=="A"):return fuck1($s);
+	case ($arr[8]=="A"):return meth1($s);
 	
       
         break;
-	case ($arr[8]=="P"):return fuck($s);
+	case ($arr[8]=="P"):return meth($s);
 	
       
      break;
@@ -42,7 +42,7 @@ function timeConversion($s) {
    
 }
 }
-function fuck2($s){
+function meth2($s){
 	$arr=str_split($s);
 	//print_r($arr);
 	$arr1[0]=$arr[0];
@@ -61,7 +61,7 @@ function fuck2($s){
     return $h.":".$m.":".$s;
 	
 }
-function fuck3($s){
+function meth3($s){
 	$arr=str_split($s);
 	//print_r($arr);
 	$arr1[0]=$arr[0];
@@ -80,7 +80,7 @@ function fuck3($s){
     return $h.":".$m.":".$s;
 	
 }
-function fuck($s){
+function meth($s){
 	$arr=str_split($s);
 	//print_r($arr);
 	$arr1[0]=$arr[0];
@@ -99,7 +99,7 @@ function fuck($s){
     return $h.":".$m.":".$s;
 	
 }
-function fuck1($s){
+function meth1($s){
 	$arr=str_split($s);
 	//print_r($arr);
 	$arr1[0]=$arr[0];
